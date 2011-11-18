@@ -4,7 +4,7 @@ require File.expand_path('../lib/nullobject/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Marcin Ciunelis"]
   gem.email         = ["marcin.ciunelis@gmail.com"]
-  gem.description   = %q{Null Object Design Pattern Ruby implementatin}
+  gem.description   = %q{Null Object Design Pattern Ruby implementation}
   gem.summary       = %q{}
   gem.homepage      = ""
 
