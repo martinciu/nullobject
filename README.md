@@ -3,6 +3,54 @@
 
 The intent of a Null Object is to encapsulate the absence of an object by providing a substitutable alternative that offers suitable default do nothing behavior. In short, a design where “nothing will come of nothing”
 
+More about Null Object Pattern you can find here:
+[en.wikipedia.org/wiki/Null_Object_pattern](http://en.wikipedia.org/wiki/Null_Object_pattern)
+[sourcemaking.com/design_patterns/null_object](http://sourcemaking.com/design_patterns/null_object)
+[avdi.org/devblog/2011/05/30/null-objects-and-falsiness](http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness/)
+
+## Usage
+
+    # examples from http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness/
+
+    Null::Object.instance.foobar.baz.buz
+
+    def Maybe(value)
+      case value
+      when nil then Null::Object.instance
+      else value
+      end
+    end
+
+    def slug(title)
+      Maybe(title).strip.downcase.tr('^[0-9a-z]', '-')
+    end
+
+    h = {}
+    
+    slug(h[:missing_key]) # => ""
+
+    foo = Null::Object.instance
+
+    foo.to_s # => #
+    foo.to_a # => []
+    foo.to_i # => 0
+    foo.to_f # => 0.0
+    foo.nil? # => true
+
+    # Custom Null Object
+
+    class FooNullObject
+      include Null
+
+      def to_bar
+        "nothing here"
+      end
+    end
+
+    foo = FooNullObject.instance
+    foo.to_bar # => "nothing here"
+    foo.to_s # => ""
+        
 ## Setup
 
 If you are using bundler add nullobject to your Gemfile:
@@ -20,10 +68,6 @@ Otherwise install the gem:
 and require it in your project:
 
     require 'nullobject'
-
-## Usage
-
-[TODO]
 
 ## Development
 
