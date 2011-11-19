@@ -84,6 +84,10 @@ describe "Null::Object" do
   describe "custom null" do
     class FooNullObject
       include Null
+
+      def to_bar
+        "nothing here"
+      end
     end
 
     before do
@@ -112,6 +116,10 @@ describe "Null::Object" do
 
     it "#nil? return true" do
       @it.nil?.must_equal true
+    end
+
+    it "#to_bar returns 'nothing_here'" do
+      @it.to_bar.must_equal "nothing here"
     end
   
     describe "#+" do
