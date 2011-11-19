@@ -1,10 +1,10 @@
 require "singleton"
 
-class NullObject
-  include Singleton
-  
-  def self.maybe(value)
-    value.nil? ? instance : value
+module Null
+
+  def self.included(base)
+    base.send(:include, Singleton)
+    base.extend Null::ClassMethods
   end
 
   def to_a; []; end
@@ -25,7 +25,7 @@ class NullObject
     self
   end
 
-  private
+  protected
     def coerced(other)
       send({
         Integer => :to_i,
@@ -35,5 +35,15 @@ class NullObject
         Array   => :to_a
       }[other.class])
     end
+
+  module ClassMethods
+    def maybe(value)
+      value.nil? ? instance : value
+    end
+  end
+
+  class Object
+    include Null
+  end
 
 end
