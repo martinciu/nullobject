@@ -1,12 +1,14 @@
-# NullObject[![travis-ci](https://secure.travis-ci.org/martinciu/nullobject.png?branch=master)](http://travis-ci.org/martinciu/nullobject)
-### Intent
+# NullObject
+#### Null Object Design Pattern Ruby implementation
+[![travis-ci](https://secure.travis-ci.org/martinciu/nullobject.png?branch=master)](http://travis-ci.org/martinciu/nullobject)
+## Intent
 
 The intent of a Null Object is to encapsulate the absence of an object by providing a substitutable alternative that offers suitable default do nothing behavior. In short, a design where “nothing will come of nothing”
 
-More about Null Object Pattern you can find here:
-[en.wikipedia.org/wiki/Null_Object_pattern](http://en.wikipedia.org/wiki/Null_Object_pattern)
-[sourcemaking.com/design_patterns/null_object](http://sourcemaking.com/design_patterns/null_object)
-[avdi.org/devblog/2011/05/30/null-objects-and-falsiness](http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness/)
+More about Null Object Pattern you can find here:  
+[http://en.wikipedia.org/wiki/Null_Object_pattern](http://en.wikipedia.org/wiki/Null_Object_pattern)  
+[http://sourcemaking.com/design_patterns/null_object](http://sourcemaking.com/design_patterns/null_object)  
+[http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness](http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness/)  
 
 ## Usage
 
@@ -31,7 +33,7 @@ More about Null Object Pattern you can find here:
 
     foo = Null::Object.instance
 
-    foo.to_s # => #
+    foo.to_s # => ""
     foo.to_a # => []
     foo.to_i # => 0
     foo.to_f # => 0.0
@@ -49,7 +51,7 @@ More about Null Object Pattern you can find here:
 
     foo = FooNullObject.instance
     foo.to_bar # => "nothing here"
-    foo.to_s # => ""
+    foo.to_s   # => ""
         
 ## Setup
 
