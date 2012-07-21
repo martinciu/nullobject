@@ -26,6 +26,10 @@ describe "Null::Object" do
     it "#nil? return true" do
       @it.nil?.must_equal true
     end
+
+    it "#inspect is meaningful" do
+      @it.inspect.wont_be_empty
+    end
   end
 
   describe "custom null" do

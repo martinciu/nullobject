@@ -12,6 +12,10 @@ module Null
   def to_i; 0; end
   def nil?; true; end
 
+  def inspect
+    "#<%s:0x%x>" % [self.class, object_id]
+  end
+
   def method_missing(*args, &block)
     self
   end
