@@ -5,10 +5,10 @@
 
 The intent of a Null Object is to encapsulate the absence of an object by providing a substitutable alternative that offers suitable default do nothing behavior. In short, a design where “nothing will come of nothing”
 
-More about Null Object Pattern you can find here:  
-[http://en.wikipedia.org/wiki/Null_Object_pattern](http://en.wikipedia.org/wiki/Null_Object_pattern)  
-[http://sourcemaking.com/design_patterns/null_object](http://sourcemaking.com/design_patterns/null_object)  
-[http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness](http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness/)  
+More about Null Object Pattern you can find here:
+[http://en.wikipedia.org/wiki/Null_Object_pattern](http://en.wikipedia.org/wiki/Null_Object_pattern)
+[http://sourcemaking.com/design_patterns/null_object](http://sourcemaking.com/design_patterns/null_object)
+[http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness](http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness/)
 
 ## Usage
 
@@ -28,7 +28,7 @@ More about Null Object Pattern you can find here:
     end
 
     h = {}
-    
+
     slug(h[:missing_key]) # => ""
 
     foo = Null::Object.instance
@@ -52,7 +52,7 @@ More about Null Object Pattern you can find here:
     foo = FooNullObject.instance
     foo.to_bar # => "nothing here"
     foo.to_s   # => ""
-        
+
 ## Setup
 
 If you are using bundler add nullobject to your Gemfile:
@@ -90,4 +90,4 @@ Tests can be ran with `rake test`
 
 ## Copyright
 
-Copyright (c) 2011 Marcin Ciunelis. See [LICENSE](https://github.com/martinciu/nullobject/blob/master/LICENSE) for details.
+Copyright (c) 2012 Marcin Ciunelis. See [LICENSE](https://github.com/martinciu/nullobject/blob/master/LICENSE) for details.
