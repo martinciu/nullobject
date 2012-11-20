@@ -20,6 +20,10 @@ module Null
     self
   end
 
+  def respond_to?(message, include_private=false)
+    true
+  end
+
   class Object
     include Null
   end
