@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "Null::Object" do
-  
+
   describe "instance methods" do
     before do
       @it = Null::Object.instance
@@ -29,6 +29,14 @@ describe "Null::Object" do
 
     it "#inspect is meaningful" do
       @it.inspect.wont_be_empty
+    end
+
+    it "responds to everything" do
+      @it.respond_to?(:everything).must_equal true
+    end
+
+    it "responds with self" do
+      @it.foo.must_equal @it
     end
   end
 
@@ -68,7 +76,7 @@ describe "Null::Object" do
     it "#to_bar returns 'nothing_here'" do
       @it.to_bar.must_equal "nothing here"
     end
-  
+
   end
 
 end
