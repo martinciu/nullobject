@@ -15,6 +15,10 @@ describe "Null::Object" do
       @it.to_a.must_equal []
     end
 
+    it "#to_ary return empty array" do
+      @it.to_ary.must_equal []
+    end
+
     it "#to_f return 0.0" do
       @it.to_f.must_equal 0.0
     end
