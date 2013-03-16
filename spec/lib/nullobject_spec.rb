@@ -23,6 +23,10 @@ describe "Null::Object" do
       @it.to_hash.must_equal({})
     end
 
+    it "#to_h return empty hash" do
+      @it.to_h.must_equal({})
+    end
+
     it "#to_f return 0.0" do
       @it.to_f.must_equal 0.0
     end
