@@ -11,6 +11,10 @@ describe "Null::Object" do
       @it.to_s.must_equal ""
     end
 
+    it "#to_s(:param) return empty string" do
+      @it.to_s(:param).must_equal ""
+    end
+
     it "#to_a return empty array" do
       @it.to_a.must_equal []
     end
@@ -59,6 +63,10 @@ describe "Null::Object" do
 
     it "#to_s return empty string" do
       @it.to_s.must_equal ""
+    end
+
+    it "#to_s(:param) return empty string" do
+      @it.to_s(:param).must_equal ""
     end
 
     it "#to_a return empty array" do
