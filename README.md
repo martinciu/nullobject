@@ -6,9 +6,12 @@
 The intent of a Null Object is to encapsulate the absence of an object by providing a substitutable alternative that offers suitable default do nothing behavior. In short, a design where “nothing will come of nothing”
 
 More about Null Object Pattern you can find here:
-[http://en.wikipedia.org/wiki/Null_Object_pattern](http://en.wikipedia.org/wiki/Null_Object_pattern)
-[http://sourcemaking.com/design_patterns/null_object](http://sourcemaking.com/design_patterns/null_object)
-[http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness](http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness/)
+
+* [http://en.wikipedia.org/wiki/Null_Object_pattern](http://en.wikipedia.org/wiki/Null_Object_pattern)
+* [http://sourcemaking.com/design_patterns/null_object](http://sourcemaking.com/design_patterns/null_object)
+* [http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness](http://avdi.org/devblog/2011/05/30/null-objects-and-falsiness/)
+
+See also the [avdi/naught](https://github.com/avdi/naught) gem for extended variations of the null object pattern for Ruby 1.9.
 
 ## Usage
 
