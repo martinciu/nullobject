@@ -2,7 +2,7 @@ require "singleton"
 
 module Null
   def self.included(base)
-    base.public_send(:include, Singleton)
+    base.send(:include, Singleton)
   end
 
   def to_a

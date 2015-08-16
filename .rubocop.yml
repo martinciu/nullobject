@@ -38,3 +38,6 @@ Style/CollectionMethods:
 Style/FileName:
   Enabled: false
 
+Style/Send:
+  Enabled: false
+
