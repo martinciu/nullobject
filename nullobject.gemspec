@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Nullobject::VERSION
 
-  gem.add_development_dependency "rake", "~> 0.9.2"
-  gem.add_development_dependency "minitest", "~> 2.7.0"
-  gem.add_development_dependency "turn", "~> 0.8.3"
+  gem.add_development_dependency "rake", "~> 10.4.2"
+  gem.add_development_dependency "minitest", "~> 4.7.5"
+  gem.add_development_dependency "turn", "~> 0.9.7"
 end
