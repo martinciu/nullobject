@@ -1,7 +1,6 @@
-require 'spec_helper'
+require "spec_helper"
 
 describe "Null::Object" do
-
   describe "instance methods" do
     before do
       @it = Null::Object.instance
@@ -80,8 +79,5 @@ describe "Null::Object" do
     it "#to_bar returns 'nothing_here'" do
       @it.to_bar.must_equal "nothing here"
     end
-
   end
-
 end
-

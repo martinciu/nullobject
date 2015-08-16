@@ -1,0 +1,40 @@
+Metrics/AbcSize:
+  Max: 18
+  Exclude:
+    - "test/**/*_test.rb"
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 11
+  Exclude:
+    - "test/**/*_test.rb"
+
+Style/Documentation:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/TrivialAccessors:
+  AllowDSLWriters: true
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+Style/Send:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/FileName:
+  Enabled: false
+
