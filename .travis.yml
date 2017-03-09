@@ -6,7 +6,7 @@ rvm:
   - 2.2
   - 2.3.3
   - 2.4.0
-  - rbx-2.2.7
+  - rubinius-3.72
   - jruby
 env:
   global:
