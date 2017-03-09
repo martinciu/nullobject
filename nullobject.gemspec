@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["marcin.ciunelis@gmail.com"]
   gem.description   = "Null Object Design Pattern Ruby implementation"
   gem.summary       = ""
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/martinciu/nullobject"
   gem.license       = "MIT"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
